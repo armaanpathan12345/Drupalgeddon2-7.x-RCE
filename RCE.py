@@ -1,3 +1,5 @@
+## this can be used to exploit the vulnerablity to get the shell prompt & exploit is taken from some where else
+
 import requests
 import re
 from sys import argv

